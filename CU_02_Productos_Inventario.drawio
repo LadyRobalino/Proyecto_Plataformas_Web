@@ -1,0 +1,110 @@
+<mxfile host="app.diagrams.net">
+  <diagram id="CU02" name="CU-02 Productos e Inventario">
+    <mxGraphModel dx="1225" dy="807" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1800" pageHeight="1200" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <!-- BOUNDARY -->
+        <mxCell id="2" parent="1" style="label;startSize=28;fontStyle=1;fontSize=14;rounded=1;arcSize=2;" value="                                                                                              Sistema Isma Solution — CU-02: Gestión de Productos e Inventario" vertex="1">
+          <mxGeometry x="230" y="60" width="1250" height="530" as="geometry" />
+        </mxCell>
+
+        <!-- COLUMNA IZQUIERDA: Productos -->
+        <mxCell id="uc1" parent="2" style="ellipse;whiteSpace=wrap;html=1;fontSize=10;align=center;" value="Registrar producto&#xa;(nombre, precio, stock)&#xa;RF-03-01" vertex="1">
+          <mxGeometry x="80" y="50" width="200" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="uc2" parent="2" style="ellipse;whiteSpace=wrap;html=1;fontSize=10;align=center;" value="Editar información&#xa;de producto&#xa;RF-03-02" vertex="1">
+          <mxGeometry x="80" y="130" width="200" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="uc3" parent="2" style="ellipse;whiteSpace=wrap;html=1;fontSize=10;align=center;" value="Desactivar / Eliminar&#xa;producto&#xa;RF-03-03" vertex="1">
+          <mxGeometry x="80" y="210" width="200" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="uc4" parent="2" style="ellipse;whiteSpace=wrap;html=1;fontSize=10;align=center;" value="Consultar catálogo&#xa;de productos&#xa;RF-03-04" vertex="1">
+          <mxGeometry x="80" y="290" width="200" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="uc5" parent="2" style="ellipse;whiteSpace=wrap;html=1;fontSize=10;align=center;" value="Filtrar productos&#xa;(empresa, categoría, nombre)&#xa;RF-03-05" vertex="1">
+          <mxGeometry x="80" y="370" width="200" height="60" as="geometry" />
+        </mxCell>
+
+        <!-- COLUMNA DERECHA: Inventario -->
+        <mxCell id="uc6" parent="2" style="ellipse;whiteSpace=wrap;html=1;fontSize=10;align=center;" value="Controlar stock&#xa;en tiempo real&#xa;RF-04-01" vertex="1">
+          <mxGeometry x="680" y="50" width="200" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="uc7" parent="2" style="ellipse;whiteSpace=wrap;html=1;fontSize=10;align=center;" value="Generar alerta&#xa;de stock bajo&#xa;RF-04-02" vertex="1">
+          <mxGeometry x="680" y="130" width="200" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="uc8" parent="2" style="ellipse;whiteSpace=wrap;html=1;fontSize=10;align=center;" value="Ver historial de movimientos&#xa;(entradas y salidas)&#xa;RF-04-03" vertex="1">
+          <mxGeometry x="680" y="210" width="200" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="uc9" parent="2" style="ellipse;whiteSpace=wrap;html=1;fontSize=10;align=center;" value="Sincronizar inventario&#xa;con sistema externo (API)&#xa;RF-04-04" vertex="1">
+          <mxGeometry x="680" y="295" width="200" height="55" as="geometry" />
+        </mxCell>
+
+        <!-- RELACIONES entre UC -->
+        <mxCell id="inc1" edge="1" parent="2" source="uc4" target="uc5" style="endArrow=open;endFill=0;dashed=1;html=1;fontSize=9;fontStyle=2;fontColor=#2E75B6;" value="«extend»">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="inc2" edge="1" parent="2" source="uc1" target="uc6" style="endArrow=open;endFill=0;dashed=1;html=1;fontSize=9;fontStyle=2;fontColor=#2E75B6;" value="«include»">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="inc3" edge="1" parent="2" source="uc6" target="uc7" style="endArrow=open;endFill=0;dashed=1;html=1;fontSize=9;fontStyle=2;fontColor=#2E75B6;" value="«include»">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- ACTORES -->
+        <mxCell id="a_empresa" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" value="Empresa" vertex="1">
+          <mxGeometry x="150" y="200" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="a_vendedor" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" value="Vendedor /&#xa;Comprador" vertex="1">
+          <mxGeometry x="150" y="380" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="a_admin" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" value="Administrador" vertex="1">
+          <mxGeometry x="1510" y="200" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="a_erp" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" value="Sistema ERP&#xa;Externo" vertex="1">
+          <mxGeometry x="1510" y="370" width="30" height="60" as="geometry" />
+        </mxCell>
+
+        <!-- CONEXIONES Empresa -->
+        <mxCell edge="1" parent="1" target="uc1" style="endArrow=none;html=1;strokeWidth=1.5;" value="">
+          <mxGeometry relative="1" as="geometry"><mxPoint x="165" y="230" as="sourcePoint" /></mxGeometry>
+        </mxCell>
+        <mxCell edge="1" parent="1" target="uc2" style="endArrow=none;html=1;strokeWidth=1.5;" value="">
+          <mxGeometry relative="1" as="geometry"><mxPoint x="165" y="235" as="sourcePoint" /></mxGeometry>
+        </mxCell>
+        <mxCell edge="1" parent="1" target="uc3" style="endArrow=none;html=1;strokeWidth=1.5;" value="">
+          <mxGeometry relative="1" as="geometry"><mxPoint x="165" y="240" as="sourcePoint" /></mxGeometry>
+        </mxCell>
+        <mxCell edge="1" parent="1" target="uc6" style="endArrow=none;html=1;strokeWidth=1.5;" value="">
+          <mxGeometry relative="1" as="geometry"><mxPoint x="165" y="245" as="sourcePoint" /></mxGeometry>
+        </mxCell>
+        <mxCell edge="1" parent="1" target="uc8" style="endArrow=none;html=1;strokeWidth=1.5;" value="">
+          <mxGeometry relative="1" as="geometry"><mxPoint x="165" y="250" as="sourcePoint" /></mxGeometry>
+        </mxCell>
+
+        <!-- CONEXIONES Vendedor/Comprador -->
+        <mxCell edge="1" parent="1" target="uc4" style="endArrow=none;html=1;strokeWidth=1.5;" value="">
+          <mxGeometry relative="1" as="geometry"><mxPoint x="165" y="410" as="sourcePoint" /></mxGeometry>
+        </mxCell>
+        <mxCell edge="1" parent="1" target="uc5" style="endArrow=none;html=1;strokeWidth=1.5;" value="">
+          <mxGeometry relative="1" as="geometry"><mxPoint x="165" y="415" as="sourcePoint" /></mxGeometry>
+        </mxCell>
+
+        <!-- CONEXIONES Admin (derecha) -->
+        <mxCell edge="1" parent="1" target="uc7" style="endArrow=none;html=1;strokeWidth=1.5;" value="">
+          <mxGeometry relative="1" as="geometry"><mxPoint x="1510" y="230" as="sourcePoint" /></mxGeometry>
+        </mxCell>
+        <mxCell edge="1" parent="1" target="uc8" style="endArrow=none;html=1;strokeWidth=1.5;" value="">
+          <mxGeometry relative="1" as="geometry"><mxPoint x="1510" y="235" as="sourcePoint" /></mxGeometry>
+        </mxCell>
+
+        <!-- CONEXIONES ERP externo (derecha) -->
+        <mxCell edge="1" parent="1" target="uc9" style="endArrow=none;html=1;strokeWidth=1.5;" value="">
+          <mxGeometry relative="1" as="geometry"><mxPoint x="1510" y="400" as="sourcePoint" /></mxGeometry>
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
