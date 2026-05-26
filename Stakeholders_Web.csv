@@ -1,0 +1,24 @@
+Stakeholders Primarios;;;;;;;;;
+Grupo;Representante clave;Rol;Prioridad;Involucramiento;Interés en el proyecto;Metas / Criterios de éxito;Impacto en el proyecto;Necesidades;
+ISBEN Solution;CEO / Equipo de desarrollo;Propietario del producto, desarrollo, operación y administración de la plataforma.;Alta;Alto;Crear una solución tecnológica escalable y rentable;Plataforma estable y comercializable;Muy alto;Arquitectura segura, APIs, mantenimiento;
+Empresas distribuidoras;Coca-Cola Ecuador, Tesalia, Toni;Publicar productos y gestionar ventas;Alta;Alto;Reducir costos y automatizar pedidos;Control de inventario y ventas rápidas;Muy alto;"Facturación SRI, inventario en tiempo real, reglas de comisión configurables
+integración ERP/API,
+validación de vendedores,
+configuración de pagos";
+Tiendas y micromercados;Tiendas barriales, minimarkets;Comprar productos, realizar pedidos y participar como vendedores autorizados.;Alta;Alto;Conseguir productos de forma rápida;Pedidos simples y entregas eficientes;Alto;Plataforma intuitiva y stock actualizado;
+Vendedores independientes;Freelancers, comerciantes;Vender productos por comisión;Alta;Medio;Generar ingresos adicionales;Más ventas y comisiones seguras;Alto;"Gestión de pedidos y pagos, cálculo automático de comisiones
+historial de ganancias
+aprobación/certificación empresarial
+seguimiento de pedidos.";
+Compradores mayoristas;Restaurantes, hoteles, eventos;Comprar grandes cantidades;Media;Medio;Obtener mejores precios;Compras rápidas y confiables;Alto;Facturación válida y pagos seguros;
+Administrador del sistema;Equipo técnico ISBEN;Supervisar y controlar la plataforma;Alta;Alto;Mantener seguridad y estabilidad;Disponibilidad del sistema;Muy alto;Monitoreo y reportes;
+Stakeholders Secundarios;;;;;;;;;
+Grupo;Representante clave;Rol;Prioridad;Involucramiento;Interés en el proyecto;Metas / Criterios de éxito;Impacto en el proyecto;Necesidades;
+SRI Ecuador;Servicio de Rentas Internas;Validar facturación electrónica;Alta;Bajo;Cumplimiento tributario;Facturas válidas y legales;Alto;Integración con facturación electrónica;
+Pasarelas de pago;PayPhone, Kushki, DataFast;Procesar pagos digitales;Alta;Medio;Pagos seguros y rápidos;Transacciones exitosas;Alto;APIs seguras;
+Bancos ecuatorianos;Banco Pichincha, Produbanco;Validar transacciones financieras;Media;Bajo;Seguridad financiera;Transferencias confiables;Medio;Integración bancaria;
+Transportistas;Cooperativas y repartidores;Entrega de productos;Media;Medio;Optimizar rutas de entrega;Entregas rápidas y correctas;Medio;Información clara de pedidos;
+Empresas con ERP;Negocios con sistemas externos;Integrar inventarios y ventas;Media;Medio;Automatización empresarial;Integración estable;Medio;API REST documentada;
+Usuarios rurales;Tenderos de zonas alejadas;Realizar pedidos;Media;Medio;Facilidad de uso;Acceso rápido al sistema;Medio;Interfaz simple y soporte;
+Equipo de soporte técnico;QA y soporte;Mantener funcionamiento;Media;Alto;Resolver errores rápidamente;Estabilidad del sistema;Medio;Herramientas de monitoreo;
+Proveedores de internet;CNT, Claro, Netlife;Conectividad del sistema;Baja;Bajo;Disponibilidad de red;Conexión estable;Bajo;Cobertura en zonas rurales;
